@@ -4,6 +4,8 @@
   "description": "A React template built with Webpack",
   "main": "index.js",
   "scripts": {
+    "serve": "webpack serve --mode development",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,19 +15,24 @@
   "author": "Jeff Mitchell",
   "license": "MIT",
   "dependencies": {
+    "@babel/runtime": "^7.16.7",
+    "@mdx-js/loader": "^2.0.0-rc.2",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
+    "@babel/plugin-transform-runtime": "^7.16.10",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
-    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
     "style-loader": "^3.3.1",
     "webpack": "^5.67.0",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
   }
 }
